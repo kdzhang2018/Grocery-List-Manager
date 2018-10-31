@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/CustomDialogTheme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/DialogLinear">
+        <TextView
+            style="@style/DialogText"
+            android:text="@string/new_name" />
+        <EditText
+            style="@style/DialogValue"
+            android:id="@+id/new_name"
+            android:hint="@string/new_name"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DialogLinear">
+        <Button
+            style="@style/DialogButton"
+            android:id="@+id/cancel_button"
+            android:text="@string/cancel" />
+        <Button
+            style="@style/DialogButton"
+            android:id="@+id/create_button"
+            android:text="@string/create" />
+    </LinearLayout>
+</LinearLayout>

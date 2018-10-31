@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Grocery List Manager</string>
+    <string name="list_manager">List Manager</string>
+    <string name="add_list">Create New List</string>
+    <string name="grocery_list">Grocery List Entry Editor</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="original_name">Original Name</string>
+    <string name="new_name">New Name</string>
+    <string name="original_qty">Original Qty</string>
+    <string name="new_qty">New Qty</string>
+    <string name="original_unit">Original Unit</string>
+    <string name="new_unit">New Unit</string>
+    <string name="create">Create</string>
+    <string name="change">Change</string>
+    <string name="placeholder">Place Holder</string>
+    <string name="return_to_list">Return to Entry List</string>
+    <string name="return_to_lists">Return to Grocery Lists</string>
+    <string-array name="types_placeholder">
+        <item>Type One</item>
+        <item>Type Two</item>
+        <item>Type Three</item>
+    </string-array>
+</resources>

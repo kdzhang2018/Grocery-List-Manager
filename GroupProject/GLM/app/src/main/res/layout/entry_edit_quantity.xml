@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/CustomDialogTheme">
+
+    <LinearLayout
+        style="@style/DialogLinear">
+        <TextView
+            style="@style/DialogText"
+            android:text="@string/original_qty" />
+        <TextView
+            style="@style/DialogValue"
+            android:id="@+id/old_quantity" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DialogLinear">
+        <TextView
+            style="@style/DialogText"
+            android:text="@string/new_qty" />
+        <EditText
+            style="@style/DialogValue"
+            android:id="@+id/new_quantity"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DialogLinear">
+    <Button
+        android:id="@+id/cancel_button"
+        style="@style/DialogButton"
+        android:text="@string/cancel" />
+    <Button
+        android:id="@+id/edit_button"
+        style="@style/DialogButton"
+        android:text="@string/change" />
+    </LinearLayout>
+
+</LinearLayout>

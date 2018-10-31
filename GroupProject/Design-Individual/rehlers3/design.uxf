@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>390</y>
+      <w>260</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;database&gt;&gt;
+ItemsDb
+--
+-items: Item[]
+-itemTypes: ItemType[]
+--
+searchItemName(pattern : String)
+newItem(i : Item)
+getItemTypes(): ItemType[]
+getItemsByType(it : ItemType): Item[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>120</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>GroceryList
+--
+-name: String
+-itemList: listEntry[]
+--
++addItem(i : Item)
++deleteItem(i : Item)
++quantityItem(i : Item)
++checkOffItem(i : Item)
++clearAllCheckOffMarks()
++getListByType()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>160</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>listEntry
+--
+-item: Item
+-quantity: int
+-checked: boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>360</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+-name: String
+-type: ItemType
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>520</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>ItemType
+--
+-name: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>120</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>GroceryListsHandler
+--
+-currentList: GroceryList
+-allLists: GroceryList[]
+--
++saveList(g : GroceryList)
++renameList(g : GroceryList)
++deleteList(g : GroceryList)
++selectList(): GroceryList
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>160</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>230</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=1
+has a Item &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>420</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=
+m2=1
+has a ItemType &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>360</y>
+      <w>70</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>450</y>
+      <w>70</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>280</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>180</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>60</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>halign=center
+fontsize=18
+lw=0
+Grocery List Manager
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
